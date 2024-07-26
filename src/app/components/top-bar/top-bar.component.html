@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+
+  <div>
+    <mat-icon [matMenuTriggerFor]="appMenu" 
+      matTooltip="menu"
+    >menu</mat-icon>
+  </div>
+
+  <div>Griffin Michalak</div>
+
+  <div>    
+    <mat-icon [routerLink]="['/documentation']" 
+      matTooltip="Developer resources"
+    >description</mat-icon> &nbsp;
+    <mat-icon [routerLink]="['/help']" 
+      matTooltip="Help"
+    >help</mat-icon> &nbsp;
+  </div>
+
+</mat-toolbar>
+
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item [routerLink]="['/']">Home</button>
+  <button mat-menu-item [routerLink]="['/resume']">Resume</button>
+  <button mat-menu-item [routerLink]="['/about']">About Me</button>
+</mat-menu>

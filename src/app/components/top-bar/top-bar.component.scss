@@ -1,0 +1,13 @@
+@use '@angular/material' as mat; 
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  @include mat.elevation(12);
+}
+
+mat-icon {
+  cursor: pointer;
+  border-radius: 5px;
+  @include mat.elevation(2);
+}

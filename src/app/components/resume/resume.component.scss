@@ -1,0 +1,32 @@
+.pill {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: smaller;
+    transition: 0.3s;
+  }
+  
+    .pill:hover {
+        background-color: #f1f1f1;
+        color: black
+    }
+
+.logo {
+    width: 40px; 
+    height: 40px; 
+    vertical-align: middle; 
+    margin-top: 6px;
+    transition: 0.5s;
+}
+
+    .logo:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }

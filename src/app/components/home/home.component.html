@@ -1,0 +1,29 @@
+<body>
+	<br><br><br><br><br><br><br>
+	<div style="margin-left: 10%;">
+		<div class="mat-h1" style="font-weight: 800; font-size: 50px;">
+			<p style="padding-bottom: 15px; font-weight: 500;"><b>Hello!</b></p>
+			<p style="padding-bottom: 15px;"><b>my name is</b></p>
+			<p style="color: #3f51b5;"><b>Griffin Michalak</b></p>
+		</div>
+			
+		<div class='confetti'>
+			<p class="mat-h3"><span>🎉</span> Welcome to my personal website! </p>
+			@for(x of confetti; track x) { <i></i> }
+		</div>
+		<div class="button-container">
+			<button mat-raised-button [routerLink]="['/resume/']" class="menu-button medium-plus1-input" color="primary">
+				Resume
+			</button> 
+			&nbsp;&nbsp;&nbsp;
+		
+			<button mat-raised-button [routerLink]="['/about']" class="menu-button medium-plus1-input" color="primary">
+				About Me
+			</button>
+
+		</div>
+		<br>
+		<!-- <img src="https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto/referral_logos/us/insurance/hanover-2"> -->
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>

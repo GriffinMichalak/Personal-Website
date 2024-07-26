@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.padded {
+  padding: 20px;
+}
+
+.narrow-input {
+  width: 100px !important;
+}
+
+.medium-input {
+  width: 150px !important;
+}
+
+.medium-plus1-input {
+  width: 200px !important;
+}
+
+.medium-plus2-input {
+  width: 250px !important;
+}
+
+.long-input {
+  width: 400px !important;
+}
+
+.form-section {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.with-icon {
+  display: flex;
+  vertical-align: middle;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.help {
+  cursor: help;
+}
+
+.link {
+  @extend .pointer;
+  color: blue;
+  text-decoration: none;
+}
+
+.warn {
+  color: darkred;
+}
+
+.float-button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 999;
+  cursor: pointer;
+}

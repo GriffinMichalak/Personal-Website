@@ -1,0 +1,8 @@
+@if (show) {
+	<mat-form-field appearance="outline" [matTooltip]="toolTip" [ngClass]="size">
+		<mat-label>{{ label }}</mat-label>
+		<input matInput [matDatepicker]="picker" [formControl]="control">
+		<mat-datepicker-toggle [for]="picker" matSuffix></mat-datepicker-toggle>
+		<mat-datepicker #picker></mat-datepicker>
+	</mat-form-field> &nbsp; &nbsp;
+}

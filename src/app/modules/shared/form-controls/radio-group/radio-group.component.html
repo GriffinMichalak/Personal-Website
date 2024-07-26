@@ -1,0 +1,9 @@
+ @if(show) {
+	<mat-label
+		[matTooltip]="toolTip">{{ label }}</mat-label> &nbsp;
+	<mat-radio-group [formControl]="control">
+		@for(x of values; track x) {
+			<mat-radio-button  [value]="x.value" [checked]="x.checked">{{ x.value }} &nbsp;</mat-radio-button> 
+		}
+	</mat-radio-group> &nbsp; &nbsp;
+ }

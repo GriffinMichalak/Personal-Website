@@ -1,0 +1,12 @@
+@if(show) {
+	<mat-form-field 
+		appearance="outline"
+		[ngClass]="size">
+			<mat-label>{{ label }}</mat-label>
+			<mat-select [formControl]="control" multiple>
+				@for(x of choices; track x) {
+					<mat-option [value]="x">{{ x }}</mat-option>
+				}
+			</mat-select>
+	</mat-form-field> &nbsp; &nbsp;
+}

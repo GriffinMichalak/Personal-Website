@@ -1,0 +1,12 @@
+@if (show) {
+	<mat-form-field 
+		[matTooltip]="toolTip"
+		appearance="outline"
+		[ngClass]="size">
+		<mat-label>{{ label }}</mat-label>
+		<input matInput  [placeholder]="label" [formControl]="control" />
+		@if (icon) {
+			<button matSuffix mat-icon-button disabled=true><mat-icon>{{ icon }}</mat-icon></button>
+		}
+	</mat-form-field> &nbsp; &nbsp;
+}
