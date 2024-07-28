@@ -6,17 +6,11 @@
     >menu</mat-icon>
   </div>
 
-  <div>Griffin Michalak</div>
-
-  <div>    
-    <mat-icon [routerLink]="['/documentation']" 
-      matTooltip="Developer resources"
-    >description</mat-icon> &nbsp;
-    <mat-icon [routerLink]="['/help']" 
-      matTooltip="Help"
-    >help</mat-icon> &nbsp;
-  </div>
-
+  <div class="nav-item" [routerLink]="['/']" style="margin-right: 73%;">Griffin Michalak</div>
+  
+  <div class="nav-item" [routerLink]="['/resume']">Resume</div>
+  <div class="nav-item" [routerLink]="['/about']">About Me</div>
+  
 </mat-toolbar>
 
 <mat-menu #appMenu="matMenu">

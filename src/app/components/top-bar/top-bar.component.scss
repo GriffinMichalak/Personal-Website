@@ -11,3 +11,14 @@ mat-icon {
   border-radius: 5px;
   @include mat.elevation(2);
 }
+
+
+.nav-item {
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  color: lightgray;
+}
