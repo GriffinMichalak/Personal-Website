@@ -71,5 +71,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .contact-icon:hover {
   cursor: pointer;
-  fill: #3f51b5
+  fill: #3f51b5;
+  transform: scale(1.10);
 }
