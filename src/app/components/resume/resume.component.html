@@ -9,7 +9,7 @@
       <button mat-raised-button class="menu-button medium-plus1-input" color="primary">View PDF</button>
     </a>
   </div>
-  <div style="width: 50%; margin-left: 25%; margin-right: 20%;">
+  <div class="resume">
       <br><br>
 
     <mat-accordion [multi]="true">
@@ -31,7 +31,7 @@
                   <button class="pill">{{skill}}</button>
               }
           </div>
-          </div>
+      </div>
       </mat-expansion-panel>
     
       <mat-expansion-panel [expanded]="true">
@@ -46,7 +46,7 @@
             <div>
                 <h2 style="margin: 0 0 0px;">Code4Community</h2>
                 <p><i>Full Stack Developer</i> | Boston, MA</p>
-                <ul style="padding: 0 0 0 20px;">
+                <ul class="bullets">
                   <li>Developed a full stack web application for a non-profit organization</li>
                   <li>Utilized React, Node.js, Express, and MongoDB</li>
                 </ul>
@@ -65,7 +65,7 @@
           <div>
               <h2 style="margin: 0 0 0px;">The Hanover Insurance Group</h2>
               <p><i>Software Developer Intern</i> | Worcester, MA</p>
-              <ul style="padding: 0 0 0 20px;">
+              <ul class="bullets">
                 <li>Spearheaded development of full-stack Angular application that streamlined the submission process for software requests from stakeholders and increased efficiency by 90%</li>
                 <li>Automated metadata injection with policy forms via Angular Document Builder Tool, increasing form completion efficiency by 50%</li>
                 <li>Uncovered and addressed 500+ long-standing bugs in software systems impacting company solutions</li>
@@ -86,7 +86,7 @@
               <div>
                   <h2 style="margin: 0 0 0px;">Verizon Communications</h2>
                   <p><i>Software Engineering Co-Op</i> | Boston, MA</p>
-                  <ul style="padding: 0 0 0 20px;">
+                  <ul class="bullets">
                       <li>Developed robust, full-stack Microsoft .NET application extracting project budgeting data from SQL Server under in 1 second; optimized server-side processing for data analyses enabling seamless access for 500+ employee</li>
                       <li>Automated data base operations, increasing operational efficiency by 20% through 200+ CRUD operations, 20 triggers, and 10 procedures</li>
                       <li>Streamlined analysis for 1000+ Superbowl 58 network KPIs against industry rivals by implementing a data extraction and Python visualization script, reducing computation time by 50%</li>
