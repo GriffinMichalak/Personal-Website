@@ -5,11 +5,13 @@
       matTooltip="menu"
     >menu</mat-icon>
   </div>
-
-  <div class="nav-item" [routerLink]="['/']" style="margin-right: 73%;">Griffin Michalak</div>
   
-  <div class="nav-item" [routerLink]="['/resume']">Resume</div>
-  <div class="nav-item" [routerLink]="['/about']" style="margin-right: 1%;">About Me</div>
+  <div class="nav-item myname" [routerLink]="['/']" >Griffin Michalak</div>
+  
+  <div style="position: absolute; right: 0; display: flex; margin-right: 2%;">
+    <div id="resume" class="nav-item" [routerLink]="['/resume']">Resume</div> &nbsp;&nbsp;&nbsp;
+    <div id="aboutme" class="nav-item" [routerLink]="['/about']">About Me</div>
+  </div>
   
 </mat-toolbar>
 

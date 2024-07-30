@@ -2,7 +2,6 @@
 
 mat-toolbar {
   display: flex;
-  justify-content: space-between;
   @include mat.elevation(12);
 }
 
@@ -12,13 +11,33 @@ mat-icon {
   @include mat.elevation(2);
 }
 
-
 .nav-item {
   transition: 0.3s;
+}
+
+.myname {
+  margin-left: 1%;
 }
 
 .nav-item:hover {
   cursor: pointer;
   transform: scale(1.03);
   color: lightgray;
+}
+
+// ===============
+
+/* Example media query for small screens (up to 600px wide) */
+@media (max-width: 600px) {
+  #resume {
+    display: none;
+  }
+
+  #aboutme {
+    display: none;
+  }
+
+  .myname {
+    margin-left: 25%;
+  }
 }

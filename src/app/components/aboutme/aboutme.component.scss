@@ -43,11 +43,19 @@
   margin-right: 30%;
 }
 
+.main {
+  margin-left: 10%; 
+  margin-top: 3%; 
+  margin-right: 10%; 
+  text-align: center;
+}
+
+mat-toolbar[_ngcontent-ng-c387498248] {
+  justify-content: none !important;
+}
+
 /* Example media query for small screens (up to 600px wide) */
-@media (max-width: 600px) {
-  #pfp {
-    width: 100%;
-  }
+@media (max-width: 1000px) {
 
   .intro-container {
     display: initial; 
@@ -55,5 +63,9 @@
 
   .intro-text {
     margin-right: 0%;
+  }
+
+  .main {
+    margin-left: 1%;
   }
 }
