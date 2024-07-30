@@ -29,11 +29,7 @@ mat-icon {
 
 /* Example media query for small screens (up to 600px wide) */
 @media (max-width: 600px) {
-  #resume {
-    display: none;
-  }
-
-  #aboutme {
+  #resume, #aboutme, #music {
     display: none;
   }
 
