@@ -63,3 +63,24 @@ body {
     }
     }
 }
+
+
+/* Example media query for small screens (up to 600px wide) */
+@media (max-width: 600px) {
+    /* Adjust styles for small screens */
+    .mat-h1 {
+        font-size: 30px; /* Decrease font size for smaller screens */
+    }
+    #myname {
+        line-height: 60px;
+    }
+
+    body {
+        background: white;
+    }
+
+    .button-container {
+        display: flex;
+        max-width: 80%;
+    }
+}
