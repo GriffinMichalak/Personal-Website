@@ -18,6 +18,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { MusicComponent } from './components/music/music.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
     HelpComponent,
     TopBarComponent,
     ResumeComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    MusicComponent
   ],
   imports: [
     BrowserModule,
