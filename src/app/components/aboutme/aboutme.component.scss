@@ -30,3 +30,30 @@
 .linkedin:hover {
   border-color: #3f51b5;
 }
+
+.intro-container {
+  display: flex; 
+  margin-left: 15%;
+}
+
+.intro-text {
+  font-size: 18px; 
+  line-height: 25px; 
+  text-align: left; 
+  margin-right: 30%;
+}
+
+/* Example media query for small screens (up to 600px wide) */
+@media (max-width: 600px) {
+  #pfp {
+    width: 100%;
+  }
+
+  .intro-container {
+    display: initial; 
+  }
+
+  .intro-text {
+    margin-right: 0%;
+  }
+}
