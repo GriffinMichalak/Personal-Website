@@ -2,15 +2,15 @@
 
   <div style="text-align: center;">
     <div class="mat-h1" style="font-weight: 800; font-size: 40px;">
-			<p>Resume</p>
-		</div>
+      <p>Resume</p>
+    </div>
     <br>
     <a target="_blank" href="https://drive.google.com/file/d/1gtE3lz-m0UUGoZ4m0bh2FyrPcuusvpmc/view?usp=drive_link">
       <button mat-raised-button class="menu-button medium-plus1-input" color="primary">View PDF</button>
     </a>
   </div>
   <div class="resume">
-      <br><br>
+    <br><br>
 
     <mat-accordion [multi]="true">
       <mat-expansion-panel [expanded]="true">
@@ -18,22 +18,24 @@
           <mat-panel-title style="font-size: 25px;">Education</mat-panel-title>
         </mat-expansion-panel-header>
 
-      <!-- Northeastern -->
-      <div class="resume-item" style="display: flex;">
-        <a target="_blank" href="https://www.northeastern.edu/"><img src="assets/png/northeastern.png" class="logo"></a>
+        <!-- Northeastern -->
+        <div class="resume-item" style="display: flex;">
+          <a target="_blank" href="https://www.northeastern.edu/"><img src="assets/png/northeastern.png"
+              class="logo"></a>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <div>
-              <h2 style="margin: 0 0 0px;">Northeastern University, Khoury College of Computer Sciences</h2>
-              <p><i>B.S. in Computer Science and Artificial Intelligence</i> | Boston, MA</p>
-              <p>University Honors Program ~ Expected Graduation: May 2026</p>
+            <h2 style="margin: 0 0 0px;">Northeastern University, Khoury College of Computer Sciences</h2>
+            <p><i>B.S. in Computer Science and Artificial Intelligence</i> | Boston, MA</p>
+            <p>University Honors Program ~ Expected Graduation: <b>May 2026</b></p>
 
-              @for(skill of ['Algorithms', 'Data Structures', 'Software Engineering', 'Object-Oriented Design', 'Machine Learning I', 'Database Design', 'Linear Algebra', 'Discrete Math', 'Cybersecurity']; track skill) {
-                  <button class="pill">{{skill}}</button>
-              }
+            @for(skill of ['Algorithms', 'Data Structures', 'Software Engineering', 'Object-Oriented Design', 'Machine
+            Learning I', 'Database Design', 'Linear Algebra', 'Discrete Math', 'Cybersecurity']; track skill) {
+            <button class="pill">{{skill}}</button>
+            }
           </div>
-      </div>
+        </div>
       </mat-expansion-panel>
-    
+
       <mat-expansion-panel [expanded]="true">
         <mat-expansion-panel-header>
           <mat-panel-title style="font-size: 25px;">Work Experience</mat-panel-title>
@@ -41,20 +43,20 @@
 
         <!-- Code4Community -->
         <div class="resume-item" style="display: flex;">
-            <a target="_blank" href="https://www.c4cneu.com/"><img src="assets/png/c4c.jfif" class="logo"></a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <div>
-                <h2 style="margin: 0 0 0px;">Code4Community</h2>
-                <p><i>Full Stack Developer</i> | Boston, MA</p>
-                <ul class="bullets">
-                  <li>Developed a full stack web application for a non-profit organization</li>
-                  <li>Utilized React, Node.js, Express, and MongoDB</li>
-                </ul>
+          <a target="_blank" href="https://www.c4cneu.com/"><img src="assets/png/c4c.jfif" class="logo"></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <div>
+            <h2 style="margin: 0 0 0px;">Code4Community</h2>
+            <p><i>Full Stack Developer</i> | Boston, MA</p>
+            <ul class="bullets">
+              <li>Developed a <b>full stack web application</b> for a non-profit organization</li>
+              <li>Utilized React, Node.js, Express, and MongoDB</li>
+            </ul>
 
-                @for(skill of ['React.js', 'Express.js', 'Node.js', 'TypeScript', 'Git']; track skill) {
-                  <button class="pill">{{skill}}</button>
-                }
-            </div>
+            @for(skill of ['React.js', 'Express.js', 'Node.js', 'TypeScript', 'Git']; track skill) {
+            <button class="pill">{{skill}}</button>
+            }
+          </div>
         </div>
 
         <br>
@@ -63,46 +65,55 @@
           <a target="_blank" href="https://www.hanover.com/"><img src="assets/png/hanover.png" class="logo"></a>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <div>
-              <h2 style="margin: 0 0 0px;">The Hanover Insurance Group</h2>
-              <p><i>Software Developer Intern</i> | Worcester, MA</p>
-              <ul class="bullets">
-                <li>Spearheaded development of full-stack Angular application that streamlined the submission process for software requests from stakeholders and increased efficiency by 90%</li>
-                <li>Automated metadata injection with policy forms via Angular Document Builder Tool, increasing form completion efficiency by 50%</li>
-                <li>Uncovered and addressed 500+ long-standing bugs in software systems impacting company solutions</li>
-                <li>Actively participated in solutions and architectural design discussions, led team reviews of designs, and presented on a key concept in software</li>
-              </ul>
+            <h2 style="margin: 0 0 0px;">The Hanover Insurance Group</h2>
+            <p><i>Software Developer Intern</i> | Worcester, MA</p>
+            <ul class="bullets">
+              <li>Spearheaded development of <b>full-stack Angular application</b> that streamlined the submission
+                process for software requests from stakeholders and <b>increased efficiency by 90%</b></li>
+              <li>Automated metadata injection with policy forms via Angular Document Builder Tool, <b>increasing form
+                  completion efficiency by 50%</b></li>
+              <li>Uncovered and addressed <b>500+ long-standing bugs</b> in software systems impacting company solutions
+              </li>
+              <li>Actively participated in solutions and architectural design discussions, led team reviews of designs,
+                and presented on a key concept in software</li>
+            </ul>
 
-              @for(skill of ['Angular', 'TypeScript', 'Node.js', 'MongoDB', 'Azure']; track skill) {
-                <button class="pill">{{skill}}</button>
-              }
+            @for(skill of ['Angular', 'TypeScript', 'Node.js', 'MongoDB', 'Azure']; track skill) {
+            <button class="pill">{{skill}}</button>
+            }
           </div>
         </div>
 
         <br>
-          <!-- Verizon -->
-          <div class="resume-item" style="display: flex;">
-              <a target="_blank" href="https://www.verizon.com/"><img src="assets/png/verizon.png" class="logo"></a>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <div>
-                  <h2 style="margin: 0 0 0px;">Verizon Communications</h2>
-                  <p><i>Software Engineering Co-Op</i> | Boston, MA</p>
-                  <ul class="bullets">
-                      <li>Developed robust, full-stack Microsoft .NET application extracting project budgeting data from SQL Server under in 1 second; optimized server-side processing for data analyses enabling seamless access for 500+ employee</li>
-                      <li>Automated data base operations, increasing operational efficiency by 20% through 200+ CRUD operations, 20 triggers, and 10 procedures</li>
-                      <li>Streamlined analysis for 1000+ Superbowl 58 network KPIs against industry rivals by implementing a data extraction and Python visualization script, reducing computation time by 50%</li>
-                      <li>Conducted code reviews, browser tests and frequent pairing sessions to ensure code quality</li>
-                  </ul>
-      
-                  @for(skill of ['ASP.NET', 'JavaScript', 'C#', 'HTML', 'CSS', 'Python', 'SQL']; track skill) {
-                      <button class="pill">{{skill}}</button>
-                  }
-              </div>
+        <!-- Verizon -->
+        <div class="resume-item" style="display: flex;">
+          <a target="_blank" href="https://www.verizon.com/"><img src="assets/png/verizon.png" class="logo"></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <div>
+            <h2 style="margin: 0 0 0px;">Verizon Communications</h2>
+            <p><i>Software Engineering Co-Op</i> | Boston, MA</p>
+            <ul class="bullets">
+              <li>Developed robust, <b>full-stack Microsoft .NET application</b> extracting project budgeting data from
+                SQL Server under in 1 second; optimized server-side processing for data analyses enabling seamless
+                access for 500+ employee</li>
+              <li>Automated data base operations, increasing operational <b>efficiency by 20%</b> through 200+ CRUD
+                operations, 20 triggers, and 10 procedures</li>
+              <li>Streamlined analysis for <b>1000+ Superbowl 58 network KPIs</b> against industry rivals by
+                implementing a data extraction and Python visualization script, <b>reducing computation time by 50%</b>
+              </li>
+              <li>Conducted code reviews, browser tests and frequent pairing sessions to ensure code quality</li>
+            </ul>
+
+            @for(skill of ['ASP.NET', 'JavaScript', 'C#', 'HTML', 'CSS', 'Python', 'SQL']; track skill) {
+            <button class="pill">{{skill}}</button>
+            }
           </div>
+        </div>
 
         <br>
 
       </mat-expansion-panel>
     </mat-accordion>
-    
+
   </div>
 </div>
