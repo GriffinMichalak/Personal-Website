@@ -6,9 +6,15 @@
 
 .card {
     transition: 0.3s;
+    max-width: 300px;
 }
 
 .card:hover {
     transform: scale(1.01);
     cursor: pointer;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }

@@ -1,19 +1,40 @@
-<p>music works!</p>
+<div style="margin-left: 10%; margin-right: 10%; margin-top: 2%;">
+    <h2 style="text-align: center; font-size: 30px;">Music 🎷</h2>
 
-<div>
-    https://www.youtube.com/channel/UCYypglVf7fJQJv4PEBy5LxQ
+    <!-- ================== SOLO ================== -->
+    <br>
+    <h4 style="text-align: center;">Solo Works</h4>
+    <div class="container">
+        @for (p of solo; track p) {
+            <a href={{p.link}} target="_blank" class="card">
+                <mat-card appearance="outlined">
+                    <img mat-card-image src={{p.image}} alt="Photo">
+                    <mat-card-content style="text-align: center;">
+                        <h3>{{p.title}}</h3>
+                    </mat-card-content>
+                </mat-card>
+            </a>
+        }
+    </div>
+
+    <br><br>
+    <mat-divider></mat-divider>
+
+    <!-- ================== GROUP ================== -->
+    <br>
+    <h4 style="text-align: center;">Group Works</h4>
+    <div class="container">
+        @for (p of group; track p) {
+            <a href={{p.link}} target="_blank" class="card">
+                <mat-card appearance="outlined">
+                    <img mat-card-image src={{p.image}} alt="Photo">
+                    <mat-card-content style="text-align: center;">
+                        <h3>{{p.title}}</h3>
+                    </mat-card-content>
+                </mat-card>
+            </a>
+        }
+    </div>
 </div>
 
-<div class="container">
-    @for (item of [1,2,3,4,5,6]; track $index) {
-        <div class="card">
-            <mat-card appearance="outlined">
-                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo">
-                <mat-card-content style="text-align: center;">
-                    <h2>Description</h2>
-                </mat-card-content>
-            </mat-card>
-        </div>
-    }
-</div>
 
