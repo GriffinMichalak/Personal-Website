@@ -3,3 +3,17 @@
 <div>
     https://www.youtube.com/channel/UCYypglVf7fJQJv4PEBy5LxQ
 </div>
+
+<div class="container">
+    @for (item of [1,2,3,4,5,6]; track $index) {
+        <div class="card">
+            <mat-card appearance="outlined">
+                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo">
+                <mat-card-content style="text-align: center;">
+                    <h2>Description</h2>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    }
+</div>
+
