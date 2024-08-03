@@ -1,1 +1,26 @@
-<p>portfolio works!</p>
+<div style="margin-left: 10%; margin-right: 10%; margin-top: 2%;">
+    <h2 style="text-align: center; font-size: 30px;">Portfolio</h2>
+
+    <br>
+    <div class="container">
+        @for (p of projects; track p) {
+            <a href={{p.link}} target="_blank" class="card">
+                <mat-card appearance="outlined">
+                    <img width="200px" mat-card-image src={{p.image}} alt="Photo">
+                    <mat-card-content style="text-align: center;">
+                        <h3>{{p.title}}</h3>
+                    </mat-card-content>
+                </mat-card>
+            </a>
+        }
+    </div>
+</div>
+
+<br><br>
+<mat-divider></mat-divider>
+<br>
+<div style="text-align: center;">
+	<a target="_blank" href="https://www.linkedin.com/in/griffinmichalak/"><img class="contact-icon" src="assets/icons/linkedin.svg"></a> &nbsp;
+	<a target="_blank" href="mailto:griffinmichalak@gmail.com"><img class="contact-icon" src="assets/icons/mail.svg"> </a> &nbsp;
+	<a target="_blank" href="https://github.com/GriffinMichalak"><img class="contact-icon" src="assets/icons/github.svg"></a>
+</div>
