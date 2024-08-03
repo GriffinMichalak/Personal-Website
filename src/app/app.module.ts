@@ -19,6 +19,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { MusicComponent } from './components/music/music.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MusicComponent } from './components/music/music.component';
     TopBarComponent,
     ResumeComponent,
     AboutmeComponent,
-    MusicComponent
+    MusicComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
